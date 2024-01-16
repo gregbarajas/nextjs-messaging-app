@@ -54,10 +54,10 @@ const AuthForm = () => {
           sm:px-10
         "
       >
-            Auth Form2
+            Auth Form222
         </div>
     )
  }
-}
+};
 
  export default AuthForm;
