@@ -37,9 +37,20 @@ const AuthForm = () => {
         }
       });
 
+    const onSubmit: SubmitHandler<FieldValues> = (data) => {
+      setIsLoading(true)
+
+      if (variant === 'REGISTER') {
+
+      }
+      if (variant === 'LOGIN') {
+
+      }
+
     const socialAction = (action: string) => {
         setIsLoading(true);
     }
+  }
       
     
     
@@ -56,7 +67,12 @@ const AuthForm = () => {
           sm:px-10
         "
       >
-            Auth Form
+            <form
+              className='space-y-6'
+              onSubmit={handleSubmit(onSubmit)}
+            >
+
+            </form>
         </div>
         </div>
     )
