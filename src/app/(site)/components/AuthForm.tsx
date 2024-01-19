@@ -23,7 +23,7 @@ const AuthForm = () => {
         }
       }, [variant]);
 
-      const {
+    const {
         register,
         handleSubmit,
         formState: {
@@ -37,13 +37,15 @@ const AuthForm = () => {
         }
       });
 
-      const socialAction = (action: string) => {
+    const socialAction = (action: string) => {
         setIsLoading(true);
+    }
       
     
     
 
     return (
+      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div 
         className="
         bg-white
@@ -54,10 +56,11 @@ const AuthForm = () => {
           sm:px-10
         "
       >
-            Auth Form222
+            Auth Form
+        </div>
         </div>
     )
- }
-};
+ };
+
 
  export default AuthForm;
